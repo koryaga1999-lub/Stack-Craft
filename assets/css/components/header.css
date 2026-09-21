@@ -1,0 +1,95 @@
+/* Сама шапка */
+.navbar {
+  width: 100%;
+  background: linear-gradient(180deg, #0B0F19 0%, #00D2FF 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Логотип */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo__icon {
+  width: 40px;
+  height: 40px;
+  background: #2563eb;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo__title {
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.logo__subtitle {
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #b0b0b8;
+  margin-top: 3px;
+}
+
+/* Навигация */
+.nav {
+  display: flex;
+  gap: 36px;
+}
+
+.nav a {
+  color: #c8c8d0;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+/* Кнопка */
+.btn-support {
+  padding: 12px 28px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4a9eff 0%, #2563eb 100%);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(74, 158, 255, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-support:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 28px rgba(74, 158, 255, 0.55);
+}
