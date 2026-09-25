@@ -37,35 +37,36 @@
   <section class="contacts">
     <div class="container">
       <article class="contact-copy">
-        <span class="placeholder title" aria-hidden="true"></span>
-        <span class="placeholder title accent" aria-hidden="true"></span>
+        <span class="placeholder title" aria-hidden="true">Давайте обсудим</span>
+        <span class="placeholder title accent" aria-hidden="true">ваш проект</span>
 
         <span class="description" aria-hidden="true">
-          <span class="placeholder copy"></span>
-          <span class="placeholder copy"></span>
-          <span class="placeholder copy"></span>
+          <span class="placeholder copy">Напишите, что хотите сделать и какая задача стоит сейчас. Техническое задание необязательно — для первого разговора достаточно описания своими словами.</span>
         </span>
 
         <address aria-label="Контакты">
-          <a href="#" aria-label="Контакт 1"></a>
-          <a href="#" aria-label="Контакт 2"></a>
-          <a href="#" aria-label="Контакт 3"></a>
-          <a href="#" aria-label="Контакт 4"></a>
+          <a class="oneCont" href="#" aria-label="Контакт 1"><p>email123@gmail.com</p></a>
+          <a class="twoCont" href="#" aria-label="Контакт 2"><p>https://t.me/telegram</p></a>
+          <a class="threeCont" href="#" aria-label="Контакт 3"><p>https://vk.ru/feed</p></a>
+          <a class="fourCont" href="#" aria-label="Контакт 4"><p>7 999 999 99 99</p></a>
         </address>
       </article>
 
-      <form class="contact-form" action="#" onsubmit="return false">
-        <label>
-          <input type="text" aria-label="Имя">
-        </label>
-        <label>
-          <input type="text" aria-label="Контакт">
-        </label>
-        <label>
-          <textarea aria-label="Описание задачи"></textarea>
-        </label>
-        <button type="submit" aria-label="Отправить"></button>
-      </form>
+    <form class="contact-form" action="#" onsubmit="return false">
+      <label>
+        <span class="field-label">Имя</span>
+        <input type="text" aria-label="Имя" placeholder="Как к вам обращаться">
+      </label>
+      <label>
+        <span class="field-label">Контакт</span>
+        <input type="text" aria-label="Контакт" placeholder="E-mail или Telegram">
+      </label>
+      <label>
+        <span class="field-label">Описание задачи</span>
+        <textarea aria-label="Описание задачи" placeholder="Например: нужен лендинг и Telegram-бот для обработки заявок"></textarea>
+      </label>
+      <button type="submit" aria-label="Отправить">Отправить</button>
+    </form>
     </div>
   </section>
 </main>
@@ -76,8 +77,8 @@
       <span class="brand-mark">SC</span>
       <span class="brand-name">STACK <small>CRAFT</small></span>
     </a>
-    <span class="footer-note" aria-hidden="true"></span>
-    <a class="footer-contact" href="contacts.html" aria-label="Связаться"></a>
+    <span class="footer-note" aria-hidden="true">Разработка сайтов, сервисов и автоматизаций</span>
+    <a class="footer-contact" href="contacts.html" aria-label="Связаться">Связаться с поддержкой</a>
   </div>
 </footer>
 

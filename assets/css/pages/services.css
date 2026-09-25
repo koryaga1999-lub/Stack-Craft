@@ -1,0 +1,301 @@
+.services {
+  background: #020305;
+  color: #f5f3f8;
+
+  padding: 52px 0 41px;
+}
+
+.services,
+.services * {
+  box-sizing: border-box;
+}
+
+.services__container {
+  width: calc(100% - 74px);
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.services__head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+
+  align-items: start;
+
+  margin-bottom: 61px;
+}
+
+.services__title {
+  margin: 0;
+
+  max-width: 500px;
+
+  font-size: 52px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -2.6px;
+
+  color: #f4f2f7;
+}
+
+.services__title span {
+  display: block;
+  color: #45c8f3;
+
+  margin-top: 9px;
+}
+
+.services__summary {
+  margin: 27px 0 0;
+
+  max-width: 475px;
+
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+
+  color: #9994a7;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.service-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  column-gap: 16px;
+  row-gap: 15px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.service-card {
+  position: relative;
+
+  height: auto;
+  min-height: 337px;
+
+  padding: 20px 22px 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(117, 71, 184, 0.25);
+  border-radius: 18px;
+
+  background:
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(48, 26, 77, 0.12),
+      transparent 48%
+    ),
+    linear-gradient(
+      135deg,
+      #100d17 0%,
+      #0b0911 100%
+    );
+}
+
+.service-card img {
+  padding: 10px;
+}
+
+
+/* лёгкое свечение как на макете */
+
+.service-card::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  border-radius: inherit;
+
+  background:
+    radial-gradient(
+      circle at 50% 120%,
+      rgba(76, 35, 125, 0.07),
+      transparent 52%
+    );
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.service-card__top {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  font-size: 9px;
+  line-height: 1.4;
+  font-weight: 400;
+
+  color: #666270;
+}
+
+.service-card__top span:first-child {
+  min-width: 0;
+}
+
+.service-card__top span:last-child {
+  flex: 0 0 auto;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.service-card__content {
+  position: relative;
+  z-index: 1;
+}
+
+.service-card__content h3 {
+  margin: 0 0 11px;
+
+  font-size: 21px;
+  line-height: 1.15;
+  font-weight: 650;
+  letter-spacing: -0.4px;
+
+  color: #f3f1f6;
+}
+
+.service-card__content p {
+  margin: 0;
+
+  max-width: 320px;
+
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #8b8793;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .services {
+    padding-top: 60px;
+  }
+
+  .services__container {
+    width: calc(100% - 40px);
+  }
+
+  .services__title {
+    font-size: 44px;
+  }
+
+  .services__head {
+    column-gap: 30px;
+    margin-bottom: 45px;
+  }
+
+  .service-card {
+    height: 250px;
+  }
+
+  .service-card img {
+    height: 180px;
+
+  }
+}
+
+
+/* =========================
+   MOBILE / TABLET
+========================= */
+
+@media (max-width: 760px) {
+
+  .services__head {
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+    margin-bottom: 40px;
+  }
+
+  .services__summary {
+    margin-top: 0;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-card {
+    height: 240px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 520px) {
+
+  .services {
+    padding: 45px 0;
+  }
+
+  .services__container {
+    width: calc(100% - 28px);
+  }
+
+  .services__title {
+    font-size: 38px;
+    letter-spacing: -1.8px;
+  }
+
+  .services__summary {
+    font-size: 14px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .service-card {
+    height: 230px;
+  }
+}

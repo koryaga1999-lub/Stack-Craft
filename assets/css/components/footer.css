@@ -1,0 +1,64 @@
+.site-footer {
+  height: 70px;
+  border-top: 1px solid rgba(255,255,255,.025);
+}
+
+.site-footer > .container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 170px 1fr 170px;
+  align-items: center;
+}
+
+.footer-note {
+  /* Размеры */
+  min-width: 100px;
+  min-height: 30px;
+  box-sizing: border-box; 
+
+  /* Форма и цвет */
+  color: #777181;
+  text-decoration: none;
+
+  /* Центрирование текста */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Текст */
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer-contact {
+  justify-self: end;
+
+  /* Размеры */
+  min-width: 100px;
+  min-height: 30px;
+  box-sizing: border-box; 
+
+  /* Форма и цвет */
+  color: #00D2FF;
+  text-decoration: none;
+
+  /* Центрирование текста */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Текст */
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 760px) {
+  .site-footer > .container { grid-template-columns: 1fr auto; }
+  .footer-note { display: none; }
+}
