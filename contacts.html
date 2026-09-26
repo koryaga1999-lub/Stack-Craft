@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — каркас</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components/header.css">
+  <link rel="stylesheet" href="assets/css/components/footer.css">
+  <link rel="stylesheet" href="assets/css/components/placeholders.css">
+  <link rel="stylesheet" href="assets/css/pages/contacts.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Главная">
+      <span class="brand-mark">SC</span>
+      <span class="brand-name">STACK <small>CRAFT</small></span>
+    </a>
+
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="index.html">О нас</a>
+      <a href="services.html">Услуги</a>
+      <a href="info.html">Информация</a>
+      <a href="contacts.html" aria-current="page">Контакты</a>
+      <a class="support" href="contacts.html">Поддержка</a>
+    </nav>
+
+    <button class="menu-button" type="button" aria-label="Меню" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="contacts">
+    <div class="container">
+      <article class="contact-copy">
+        <span class="placeholder title" aria-hidden="true"></span>
+        <span class="placeholder title accent" aria-hidden="true"></span>
+
+        <span class="description" aria-hidden="true">
+          <span class="placeholder copy"></span>
+          <span class="placeholder copy"></span>
+          <span class="placeholder copy"></span>
+        </span>
+
+        <address aria-label="Контакты">
+          <a href="#" aria-label="Контакт 1"></a>
+          <a href="#" aria-label="Контакт 2"></a>
+          <a href="#" aria-label="Контакт 3"></a>
+          <a href="#" aria-label="Контакт 4"></a>
+        </address>
+      </article>
+
+      <form class="contact-form" action="#" onsubmit="return false">
+        <label>
+          <input type="text" aria-label="Имя">
+        </label>
+        <label>
+          <input type="text" aria-label="Контакт">
+        </label>
+        <label>
+          <textarea aria-label="Описание задачи"></textarea>
+        </label>
+        <button type="submit" aria-label="Отправить"></button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Главная">
+      <span class="brand-mark">SC</span>
+      <span class="brand-name">STACK <small>CRAFT</small></span>
+    </a>
+    <span class="footer-note" aria-hidden="true"></span>
+    <a class="footer-contact" href="contacts.html" aria-label="Связаться"></a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
