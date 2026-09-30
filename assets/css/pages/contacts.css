@@ -96,7 +96,7 @@
   border: 1px solid rgba(255,255,255,.035);
   border-radius: 5px;
   background: #07060d;
-  color: var(--text);
+  color: white;
   outline: none;
 }
 

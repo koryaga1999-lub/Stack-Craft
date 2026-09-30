@@ -52,24 +52,43 @@
         </address>
       </article>
 
-    <form class="contact-form" action="#" onsubmit="return false">
+    <form class="contact-form" action="#">
       <label>
         <span class="field-label">Имя</span>
-        <input type="text" aria-label="Имя" placeholder="Как к вам обращаться">
+        <input type="text" name="from_name" aria-label="Имя" placeholder="Как к вам обращаться">
       </label>
       <label>
         <span class="field-label">Контакт</span>
-        <input type="text" aria-label="Контакт" placeholder="E-mail или Telegram">
+        <input type="text" name="from_contact" aria-label="Контакт" placeholder="E-mail или Telegram">
       </label>
       <label>
         <span class="field-label">Описание задачи</span>
-        <textarea aria-label="Описание задачи" placeholder="Например: нужен лендинг и Telegram-бот для обработки заявок"></textarea>
+        <textarea aria-label="Описание задачи" name="message" placeholder="Например: нужен лендинг и Telegram-бот для обработки заявок"></textarea>
       </label>
       <button type="submit" aria-label="Отправить">Отправить</button>
     </form>
     </div>
   </section>
 </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> <!-- Подключение EmailJS -->                            
+      <!-- Подключение EmailJS для отправки формы на почту -->
+        <script>
+            emailjs.init('pmq0zLrI28Asn1f-G'); // Инициализация EmailJS, wfF1HMSf5gw9uGF-I - это API ключ который получили на сайте EmailJS
+
+            document.querySelector('.contact-form').addEventListener('submit', function(event) { // Обработка отправки формы
+            // event.preventDefault(); // Отмена стандартной отправки формы
+            event.preventDefault(); // Отмена стандартной отправки формы, то есть отправка формы будет происходить только при нажатии на кнопку
+                    
+              emailjs.sendForm('service_zu0moik', 'template_1xgc207', this) // Отправка формы на почту, sendForm(service_id, template_id, form) - функция EmailJS, this - форма, которую мы отправляем
+                  .then(function() { // Обработка успешной отправки, then() - функция EmailJS, то что будет выполнено после успешной отправки
+                      alert('Обращение отправлено!');
+                      document.querySelector('.contact-form').reset(); // Сброс формы после успешной отправки
+                  }, function(error) { // Обработка ошибки, function() - функция EmailJS для 
+                      alert('Ошибка отправки: ' + error.text); // Вывод сообщения об ошибке
+                  });
+                });
+            </script>
 
 <footer class="site-footer">
   <div class="container">
