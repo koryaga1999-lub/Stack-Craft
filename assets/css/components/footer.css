@@ -12,18 +12,52 @@
 
 .footer-note {
   justify-self: center;
-  width: 135px;
-  height: 4px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.055);
+
+  /* Размеры */
+  min-width: 100px;
+  min-height: 30px;
+  box-sizing: border-box; 
+
+  /* Форма и цвет */
+  color: #777181;
+  text-decoration: none;
+
+  /* Центрирование текста */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Текст */
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer-contact {
   justify-self: end;
-  width: 98px;
-  height: 5px;
-  border-radius: 999px;
-  background: rgba(50,200,255,.35);
+
+  /* Размеры */
+  min-width: 100px;
+  min-height: 30px;
+  box-sizing: border-box; 
+
+  /* Форма и цвет */
+  color: #00D2FF;
+  text-decoration: none;
+
+  /* Центрирование текста */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Текст */
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 760px) {
